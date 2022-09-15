@@ -1,0 +1,9 @@
+AUTH_TIMEOUT = 3
+LOAD_TIMEOUT = 10
+SEARCH_TIMEOUT = 40
+TABLE_ROWS_LIMIT = 1000000
+TABLE_COLS_LIMIT = 16000
+SEARCH_TYPES = ['subdomains', 'prefix', 'domain', 'exact']
+OUTPUT_KEYS = ['Keyword', 'SERP features', 'Volume', 'KD', 'CPC', 'Traffic', 'Current position']
+OUTPUT_KEYS_WO_KW = OUTPUT_KEYS[1:]
+ERROR_PIC_FILENAME = 'error.jpg'
