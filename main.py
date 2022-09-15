@@ -126,7 +126,7 @@ def main():
             val = 1 if key == 'Volume' and 0 <= int(row[key]) <= 10 else row[key]
             urls_data[cur_url][keyword][f'{key} {row["Country"]}'] = val
     # if len(raw_data) > TABLE_ROWS_LIMIT or any(len(row) > TABLE_COLS_LIMIT for row in raw_data):
-    if extra_files:
+    if extra_files or len(raw_data) > TABLE_ROWS_LIMIT:
         if not os.path.exists(urls_folder):
             os.mkdir(urls_folder)
         for url in urls_data:
